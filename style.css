@@ -55,9 +55,10 @@ button{
     color: #fff;
     font-family: 'Montserrat', sans-serif;
     font-weight: 100;
-    transition: all 0.2 ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 button:hover{
+    transform: scale(1.2);
     filter: brightness(110%);
 }
 button:active{
@@ -70,6 +71,22 @@ button:active{
 .fa-twitter{
     font-size: 1.5rem;
 }
+.loader {
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #3E54AC;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+
+
 /* Media query: Tablet or Smaller */
 
 @media screen and (max-width: 1000px) {
