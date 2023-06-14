@@ -4,5 +4,79 @@ html{
 body{
     margin: 0;
     min-height: 100vh;
-    background-color: dodgerblue;
+    background: url("head.png");
+    background-color: #B1B2FF;
+    font-family:'Fraunces', serif;
+    font-weight: 800;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.quote-container{
+    width: auto;
+    max-width: 900px;
+    padding: 40px 30px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255,1);
+    box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+.quote-text{
+    font-size: 2.75rem;
+}
+.long-quote{
+    font-size: 2rem;
+}
+
+.fa-quote-left, .fa-quote-right{
+    font-size: 2rem;
+}
+.quote-author{
+    margin-top: 15px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+}
+.button-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+button{
+    cursor: pointer;
+    font-size: 1.2rem;
+    height: 3rem;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    padding: .5rem 1.8rem;
+    box-shadow: 0 0.3rem rgba(121, 121, 121, 0.65);
+    background-color: #3E54AC;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    transition: all 0.2 ease-in-out;
+}
+button:hover{
+    filter: brightness(110%);
+}
+button:active{
+    transform: translate(0, 0.3rem);
+    box-shadow: 0 0.1rem rgba(255, 255, 255, 0.65);
+}
+.twitter-button:hover{
+    color: #38A1F3;
+}
+.fa-twitter{
+    font-size: 1.5rem;
+}
+/* Media query: Tablet or Smaller */
+
+@media screen and (max-width: 1000px) {
+    .quote-container{
+        margin: auto 10px;
+    }
+    .quote-text{
+        font-size: 2.5rem;
+    }
 }
